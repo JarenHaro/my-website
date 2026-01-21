@@ -1,0 +1,137 @@
+/* ===== GLOBAL STYLES ===== */
+/* Reset default margins and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles - sets base font, line height, and background color */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+/* Header styles - dark background with sticky positioning */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation container - flexbox layout for horizontal menu */
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Site title styling */
+nav h1 {
+    font-size: 1.5rem;
+}
+
+/* Navigation menu list - horizontal flex layout */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+/* Navigation links - white text with smooth color transition */
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Navigation link hover effect - changes to red color */
+nav a:hover {
+    color: #ff6b6b;
+}
+
+/* ===== MAIN CONTENT ===== */
+/* Main content container - centered with max width */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Section styles - white background with shadow and border-radius */
+section {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section heading styles */
+section h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Section paragraph styles */
+section p {
+    margin-bottom: 1rem;
+}
+
+/* ===== BUTTONS ===== */
+/* Button styles - dark background with smooth hover transition */
+button {
+    background-color: #333;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect - lightens background color */
+button:hover {
+    background-color: #555;
+}
+
+/* ===== FOOTER ===== */
+/* Footer styles - dark background matching header */
+/* ===== RESPONSIVE DESIGN ===== */
+/* Media query for mobile devices (screens 768px and smaller) */
+@media (max-width: 768px) {
+    /* Stack navigation vertically on mobile */
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Reduce gap between navigation items on mobile */
+    nav ul {
+        gap: 1rem;
+    }
+
+    /* Reduce padding in sections on mobile for more space */    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
