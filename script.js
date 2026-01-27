@@ -1,7 +1,3 @@
-// ===== DOM ELEMENTS =====
-// Get reference to the contact button for event handling
-const contactBtn = document.getElementById('contactBtn');
-
 // ===== INITIALIZATION =====
 // Wait for DOM to fully load before attaching event listeners
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,16 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // ===== EVENT LISTENER SETUP =====
 // Initialize all event listeners for interactive elements
 function initializeEventListeners() {
-    // Add click handler to contact button if it exists
-    if (contactBtn) {
-        contactBtn.addEventListener('click', handleContactClick);
-    }
-}
-
-// ===== EVENT HANDLERS =====
-// Handle contact button click - displays alert with contact information
-function handleContactClick() {
-    alert('Thank you for your interest! Please email me at: contact@example.com');
+    // Event listeners setup
 }
 
 // ===== SMOOTH SCROLLING =====

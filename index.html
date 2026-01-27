@@ -8,52 +8,76 @@
     <!-- Viewport meta tag for responsive design on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Page title displayed in browser tab -->
-    <title>My First Website</title>
+    <title>Jaren's Portfolio Page</title>
     <!-- Link to external CSS stylesheet for styling -->
     <link rel="stylesheet" href="style.css">
 </head>
 <!-- Body element containing all visible page content -->
 <body>
-    <!-- Header section with navigation -->
+    <!-- Header bar at the top -->
     <header>
-        <!-- Navigation bar with site title and menu links -->
+        <div class="title-container">
+            <h1>My Portfolio</h1>
+        </div>
+        <!-- Navigation bar -->
         <nav>
-            <h1>My Website</h1>
-            <!-- Navigation menu with smooth scroll links -->
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#home">About Me</a>
+            <a href="#Projects">Projects/Experience</a>
+            <a href="#Games">Favorite Games</a>
         </nav>
+        <!-- ASU Logo box in header right corner -->
+        <div class="asu-logo-box">
+            <img src="Images/ASU-Emblem-700x394.webp" alt="ASU Logo">
+        </div>
     </header>
+
+    <!-- Profile image section -->
+    <div class="profile-container">
+        <div class="profile-content">
+            <div class="profile-image">
+                <img src="Images/Jaren_Selfie.jpg" alt="Jaren">
+            </div>
+            <h2>Jaren Haro | Computer Science | Ira A Fulton Schools of Engineering</h2>
+        </div>
+    </div>
+
+
 
     <!-- Main content area -->
     <main>
         <!-- Home section with welcome message -->
         <section id="home">
-            <h2>Welcome</h2>
-            <p>This is my first website. I'm excited to learn web development!</p>
+            <h2>About Me</h2>
+            <p>Hi! I'm Jaren, and I am currently a computer science student at Arizona State University. I've been passionate about technology since a young age, and I love being able to create solutions to problems that exist in the world. Throughout my academic journey, I have developed a strong foundation in programming, and I'm always curious to learn more within my field! </p>
         </section>
 
         <!-- About section with personal information -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Tell me about yourself here.</p>
+        <section id="Projects">
+            <h2>Projects/Experience</h2>
+            <p>I will list my future projects here.</p>
         </section>
 
-        <!-- Contact section with call-to-action button -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with me:</p>
-            <!-- Button with click handler for contact message -->
-            <button id="contactBtn">Send Message</button>
+        <!-- Favorite Games section -->
+        <section id="Games">
+            <h2>Favorite Games</h2>
+            <p>Some of my favorite games:</p>
+            <div class="games-container">
+                <div class="game-card">
+                    <h3>Persona 4 Golden</h3>
+                </div>
+                <div class="game-card">
+                    <h3>Risk of Rain 2</h3>
+                </div>
+                <div class="game-card">
+                    <h3>Stardew Valley</h3>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Footer with copyright information -->
     <footer>
-        <p>&copy; 2026 My Website. All rights reserved.</p>
+        <p>&copy; 2026 Jaren's Portfolio. All rights reserved.</p>
     </footer>
 
     <!-- Link to external JavaScript file for interactivity -->
